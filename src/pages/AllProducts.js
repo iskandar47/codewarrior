@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Categories from '../components/AllProducts/Categories'
+
 
 function AllProducts() {
     return (
         <div>
-            <Navbar />
-            <h1>All products</h1>
+            <Categories />
         </div>
     )
 }

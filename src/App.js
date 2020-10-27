@@ -7,11 +7,13 @@ import AllProducts from "./pages/AllProducts";
 import Blogs from "./pages/Blogs";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -22,8 +24,8 @@ function App() {
           <Route path="/allproducts">
             <AllProducts />
           </Route>
-          <Route path="/blogs" component={Blogs}>
-            {/* <Blogs /> */}
+          <Route path="/blogs">
+            <Blogs />
           </Route>
           <Route path="/aboutus">
             <AboutUs />
