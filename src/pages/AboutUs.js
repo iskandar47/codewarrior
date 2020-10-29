@@ -2,8 +2,11 @@ import React from 'react'
 
 function AboutUs() {
     return (
-        <div>
-            <h1>About Us</h1>
+            
+        <div style={{marginTop : 100}}>
+            <h1>About us</h1>
+            <h1>About us</h1>
+            <h1>About us</h1>
         </div>
     )
 }

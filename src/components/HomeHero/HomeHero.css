@@ -52,6 +52,9 @@
     .hero-container {
         font-size: 18px;
     }
+    .description {
+        padding: 0;
+    }
 }
 .bottom-home-page {
     height: 80vh;

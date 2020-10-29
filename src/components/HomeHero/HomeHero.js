@@ -1,18 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import "./HomeHero.css"
 import {Button} from "@material-ui/core"
+import { Link } from 'react-router-dom';
 
 
 export default function HomeHero() {
   const [mobileView, setMobileView] = useState(false)
-  useEffect(()=>{
-    window.addEventListener("resize", ()=>{
+  
+  function handleWindow(){
+    
       if (window.innerWidth >960) {
         setMobileView(false)
       } if (window.innerWidth <= 960) {
         setMobileView(true)
       }
-    })
+  }
+  useEffect(()=>{
+    window.addEventListener("resize", handleWindow)
+    return ()=> window.removeEventListener("resize", handleWindow)
   },[])
   
   function add (){
@@ -49,8 +54,8 @@ export default function HomeHero() {
             <h1>this is hero</h1>
             <p>this is some paragraph about products and blogs</p>
             <div className="hero-btns">
-              <Button>Dev appareal</Button>
-              <Button>All products</Button>
+              <Link to="/devappareal"><Button>Dev appareal</Button></Link>
+              <Link to="./allproducts"><Button>All products</Button></Link>
             </div>
         </div>
       </div>
