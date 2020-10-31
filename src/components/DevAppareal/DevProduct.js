@@ -3,7 +3,7 @@ import { Card, CardMedia, CardActionArea, Typography, CardContent, CardActions, 
 import useStyles from "./Styles.js"
 
 
-function DevProduct({src, price, title}) {
+function DevProduct({src, price, title, link}) {
   const classes = useStyles()
     return (
       <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -25,7 +25,8 @@ function DevProduct({src, price, title}) {
           </CardActionArea>
           <CardActions>
             <Button size="small" color="primary">
-              Learn More
+              <a style={{textDecoration : "none", color: "blue"}} href={link} target="_blank" rel="noreferrer">Buy from Amazon</a> 
+              <i style={{fontSize : 24, marginLeft : 8}} className="fab fa-amazon"></i>
             </Button>
           </CardActions>
         </Card>

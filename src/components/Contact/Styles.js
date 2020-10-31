@@ -29,7 +29,7 @@ export default makeStyles({
        flexDirection : "column",
        justifyContent : "center",
        alignItems : "center",
-       fontSize : 24
+       fontSize : 22,
     },
     identity : {
         textAlign : "center",

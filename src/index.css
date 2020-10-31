@@ -25,4 +25,8 @@ body {
         align-items: center;
         width: 100%;
     }
+    .contact form {
+        width: 80%;
+        margin: 42px auto;
+    }
 }

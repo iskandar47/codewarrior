@@ -56,7 +56,7 @@
         margin-top: 16px;
     }
     .hero .hero-btns button {
-        width: 80%;
+        width: 100%;
     }
     .hero-container {
         font-size: 18px;
@@ -78,6 +78,9 @@
 }
 .description button {
     margin-top: 16px;
+    border-radius: 0%;
+    width: 50%;
+    border: 1px solid #000;
 }
 .description {
     width: 50%;
@@ -103,7 +106,7 @@
         padding: 24px;
     }
     .description {
-        padding: 24px;
+        padding: 24px 0;
         width: 100%;
     }
     .bottom-home-page img {

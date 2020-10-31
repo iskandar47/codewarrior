@@ -5,13 +5,14 @@ import { DataContext } from '../../Context'
 
 
 function Products() {
-    const context = useContext(DataContext)
+    const {products, loading} = useContext(DataContext)
     
-    console.log(context)
+    console.log(products)
+    console.log(loading)
     return (
           <div className="products">
-              <Grid /*  xs={12} sm={6} md={4} lg={3} */ >
-                <h1>hello i'm product</h1>
+              <Grid>
+                <h1>THIS PAGE IS FOR AMAZON PRODUCTS</h1>
               </Grid>
           </div>
     )

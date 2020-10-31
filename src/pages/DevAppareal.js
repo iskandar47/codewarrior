@@ -3,20 +3,26 @@ import DevProduct from '../components/DevAppareal/DevProduct'
 import { DataContext } from '../Context'
 import { Grid } from '@material-ui/core'
 import useStyles from "./Styles.js"
+import Loader from "../components/Loader/Loader"
 
 
 function DevAppareal() {
-    const context = useContext(DataContext)
+    const {products, loading} = useContext(DataContext)
     const classes = useStyles()
     
-    const displayProducts = context.map((item, i)=>(
-        <DevProduct key={i} price={item.price} title={item.title} src={item.image} />
+    const displayProducts = products.map((item, i)=>(
+        <DevProduct key={i} price={item.price} title={item.title} src={item.image} link={item.lnik} />
     ));
-
+    
+        console.log(loading)
     return (
-            <Grid spacing={3} className={classes.devProducts} container  >
-                {displayProducts}
+        <>
+            <h1 className={classes.header}>Made for developers.</h1>
+            <Grid spacing={2} className={classes.devProducts} container >
+                {loading ? <Loader /> : displayProducts}
             </Grid>
+            
+        </>
     )
 }
 

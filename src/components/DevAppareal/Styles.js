@@ -12,7 +12,7 @@ export default makeStyles({
         borderRadius : "0%",
     },
     price : {
-        backgroundColor : "#0B6623",
+        backgroundColor : "#60f078",
         borderRadius : "0px 25px 25px 0px",
         color : "#FFF",
         paddingTop : 4,
@@ -20,7 +20,7 @@ export default makeStyles({
         textAlign: "center",
         marginBottom : "16px",
         marginRight : "8px",
-        fontSize : 24,
+        fontSize : 22,
     },
     title : {
         padding : "0px 8px",

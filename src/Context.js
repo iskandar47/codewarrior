@@ -5,8 +5,10 @@ const DataContext = createContext()
 
 function DataContextProvider({children}){
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(false)
     
     function getData(){
+        setLoading(true)
         const client = createClient({
             space: "lku7p3y5al3x",
             accessToken: "6uTK1K_DfE5uAn4_vFqqHmYAe9FMXEQXfRLoj3DiSVc"
@@ -22,6 +24,7 @@ function DataContextProvider({children}){
             return {id, title, price, lnik, image, imageId }
         })
         setProducts(result)
+        setLoading(false)
         })
         .catch(err => console.log(err))
     }
@@ -30,7 +33,7 @@ function DataContextProvider({children}){
         getData()
     },[])
     return (
-        <DataContext.Provider value={products}>
+        <DataContext.Provider value={{products, loading}}>
            {children}
         </DataContext.Provider>
     )
