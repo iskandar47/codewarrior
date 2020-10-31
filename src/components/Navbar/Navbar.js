@@ -27,8 +27,7 @@ function Navbar() {
                     <li ><Link onClick={closeMobileMenu} name="Dev appareal" to="/devappareal">Dev appareal</Link></li>
                     <li ><Link onClick={closeMobileMenu} name="All Products" to="/allproducts">All Products</Link></li>
                     <li ><Link onClick={closeMobileMenu} name="Blogs" to="/blogs">Blogs</Link></li>
-                    <li ><Link onClick={closeMobileMenu} name="About us" to="/aboutus">About us</Link></li>
-                    <li ><Link onClick={closeMobileMenu} name="Contact" to="/contact">Contact</Link></li>
+                    <li ><Link onClick={closeMobileMenu} name="Contact" to="/contact">About/Contact</Link></li>
             </ul>
         </div>
     )

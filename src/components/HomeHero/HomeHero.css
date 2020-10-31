@@ -26,13 +26,22 @@
 .hero-btns {
     width: 100%;
 }
+.hero .hero-btns a {
+    text-decoration: none;
+}
 .hero .hero-btns button {
-    height: 42px;
+    font-family: "kumbh Sans", sans-serif;
     width: 45%;
     margin: 4px 8px;
     background: transparent;
     font-size: 18px;
     color: #FFF;
+    border : 1px solid #FFF;
+    border-radius: 0;
+}
+.hero .hero-btns button:hover {
+    background-color: #FFF;
+    color: #000;
     border : 1px solid #FFF
 }
 @media screen and (max-width : 560px) {
@@ -52,9 +61,7 @@
     .hero-container {
         font-size: 18px;
     }
-    .description {
-        padding: 0;
-    }
+    
 }
 .bottom-home-page {
     height: 80vh;

@@ -5,7 +5,6 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import DevAppareal from "./pages/DevAppareal";
 import AllProducts from "./pages/AllProducts";
 import Blogs from "./pages/Blogs";
-import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
 
@@ -26,9 +25,6 @@ function App() {
           </Route>
           <Route path="/blogs">
             <Blogs />
-          </Route>
-          <Route path="/aboutus">
-            <AboutUs />
           </Route>
           <Route path="/contact">
             <Contact />

@@ -7,3 +7,22 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.contact {
+    margin-top: 20vh;
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width : 960px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
