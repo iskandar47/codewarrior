@@ -1,10 +1,33 @@
 import {makeStyles} from "@material-ui/core"
-export default makeStyles({
+export default makeStyles(theme=>({
+    /* contact : {
+        marginTop: "20vh",
+        display : "grid",
+        gridTemplateColumns: "1fr 1fr",
+        justifyContent: "center",
+        alignItems: "center",
+        width : "100%",
+        [theme.breakpoints.down("sm")] : {
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignCtems: "center",
+            width: "100%",
+        }
+    }, */
     form : {
         display : "flex",
         flexDirection : "column",
         maxWidth : "80%",
         fontFamily : 'Kumbh Sans, sans serif',
+        /* [theme.breakpoints.down("sm")]: {
+            maxWidth : "80%",
+            margin : "42px auto"
+        },
+        [theme.breakpoints.down("xs")]: {
+            maxWidth : "90%",
+            margin : "42px auto"
+        } */
     },
     input : {
         height : "42px",
@@ -43,42 +66,5 @@ export default makeStyles({
     skills  :{
         lineHeight : "32px"
     }
-})
+}))
 
-/* .form {
-    display: flex;
-    flex-direction: column;
-    margin: 64px auto;
-    width: 500px;
-} */
-/* @media screen and (max-width: 560px) {
-    .form {
-        width: 80%;
-        margin: 32px auto;
-    }
-}
-.form input, .form textarea  {
-    height: 42px;
-    padding: 4px 8px;
-    margin: 0 0 16px;
-    font-size: 16px;
-}
-.form textarea {
-    height: 72px;
-}
-.form label {
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-.form button {
-    height: 48px;
-    font-weight: bold;
-    color: #FFF;
-    background-color: rgb(42, 42, 247);
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-.form button:hover {
-    background-color: rgb(7, 7, 154);
-} */

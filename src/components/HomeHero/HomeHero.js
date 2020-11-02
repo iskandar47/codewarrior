@@ -51,7 +51,7 @@ export default function HomeHero() {
       <div className="top-home-page">
         <img alt="homepage" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
         <div className="hero">
-            <h1>this is hero</h1>
+            <h1>CODE WARRIORS..</h1>
             <p>this is some paragraph about products and blogs</p>
             <div className="hero-btns">
               <Link to="/devappareal"><Button>Dev appareal</Button></Link>

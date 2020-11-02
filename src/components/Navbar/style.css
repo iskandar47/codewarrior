@@ -28,8 +28,9 @@
     text-decoration: none;
     color: #000;
 }
+
 .navbarList li a:hover {
-    color: #333;
+    color: #3455FF;
 }
 .menuIcon {
     display: none;

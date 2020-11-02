@@ -14,7 +14,6 @@ function DevAppareal() {
         <DevProduct key={i} price={item.price} title={item.title} src={item.image} link={item.lnik} />
     ));
     
-        console.log(loading)
     return (
         <>
             <h1 className={classes.header}>Made for developers.</h1>

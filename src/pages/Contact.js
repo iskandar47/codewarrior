@@ -5,8 +5,9 @@ import "../index.css"
 
 
 function Contact() {
+
     return (
-        <div className="contact" /* style={{marginTop : 200, display : "grid", gridTemplateColumns : "1fr 1fr"}} */>
+        <div className="contact">
             <About />
             <ContactForm />
         </div>

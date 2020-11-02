@@ -26,7 +26,13 @@ body {
         width: 100%;
     }
     .contact form {
-        width: 80%;
+        width: 50%;
+        margin: 42px auto;
+    }
+}
+@media screen and (max-width : 560px) {
+    .contact form {
+        width: 90%;
         margin: 42px auto;
     }
 }

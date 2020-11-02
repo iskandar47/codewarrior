@@ -2,7 +2,7 @@ import {makeStyles} from "@material-ui/core/styles"
 
 export default makeStyles({
     root : {
-        maxWidth: 300,
+        maxWidth: 260,
         margin: "auto",
         height: "100%",
         display: "flex",
@@ -10,9 +10,18 @@ export default makeStyles({
         justifyContent: "space-between",
         alignItems: "center",
         borderRadius : "0%",
+        transition : "all 100ms linear",
+        '&:hover' : {
+            transform : "scale(1.03)",
+        }
+    },
+    action : {
+        "&:hover" : {
+            backgroundColor : "transparent"
+        }
     },
     price : {
-        backgroundColor : "#60f078",
+        backgroundColor : "#3455FF",
         borderRadius : "0px 25px 25px 0px",
         color : "#FFF",
         paddingTop : 4,
@@ -21,6 +30,11 @@ export default makeStyles({
         marginBottom : "16px",
         marginRight : "8px",
         fontSize : 22,
+        transition : "all 100ms linear",
+        "&:hover" : {
+            marginRight : "0px",
+            backgroundColor : "#00A5FF",
+        }
     },
     title : {
         padding : "0px 8px",

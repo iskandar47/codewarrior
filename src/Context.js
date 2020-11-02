@@ -5,6 +5,7 @@ const DataContext = createContext()
 
 function DataContextProvider({children}){
     const [products, setProducts] = useState([])
+    const [blogs, setBlogs] = useState([])
     const [loading, setLoading] = useState(false)
     
     function getData(){
@@ -13,9 +14,14 @@ function DataContextProvider({children}){
             space: "lku7p3y5al3x",
             accessToken: "6uTK1K_DfE5uAn4_vFqqHmYAe9FMXEQXfRLoj3DiSVc"
           });
-        client.getEntries()
+          // GET DEV APPREAL
+        client.getEntries({
+            content_type : "iskandar47products"
+        })
         .then((res) => {
+            console.log(res)
         let result = res.items
+        
         result = result.map(item=>{
             const id = item.sys.id
             const {title, price, lnik} = item.fields;
@@ -27,13 +33,23 @@ function DataContextProvider({children}){
         setLoading(false)
         })
         .catch(err => console.log(err))
+
+        // GET BLOG POSTS
+        client.getEntries({
+            content_type : "blogs"
+        }).then(res=> {
+            
+            setBlogs(res.items)
+            
+        })
+        .catch(err => console.log(err))
     }
     
     useEffect(()=>{
         getData()
     },[])
     return (
-        <DataContext.Provider value={{products, loading}}>
+        <DataContext.Provider value={{products, blogs, loading}}>
            {children}
         </DataContext.Provider>
     )

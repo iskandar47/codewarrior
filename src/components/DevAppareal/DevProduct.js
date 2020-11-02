@@ -8,13 +8,13 @@ function DevProduct({src, price, title, link}) {
     return (
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <Card className={classes.root}>
-          <CardActionArea>
+          <CardActionArea className={classes.action} >
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
               height="300"
               image={src}
-              title="Contemplative Reptile"
+              title={title}
             />
             <CardContent className={classes.cardContent}>
               <p className={classes.price}>{`$ ${price}`}</p>
