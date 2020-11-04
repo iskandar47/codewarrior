@@ -12,7 +12,7 @@ function DevProduct({src, price, title, link}) {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="300"
+              height="280"
               image={src}
               title={title}
             />

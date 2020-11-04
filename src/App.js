@@ -7,6 +7,7 @@ import AllProducts from "./pages/AllProducts";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+        <Footer />
       </Router>
       
     </div>

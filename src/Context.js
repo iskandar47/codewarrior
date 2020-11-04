@@ -7,6 +7,7 @@ function DataContextProvider({children}){
     const [products, setProducts] = useState([])
     const [blogs, setBlogs] = useState([])
     const [loading, setLoading] = useState(false)
+    const [blogID, setBlogID] = useState("")
     
     function getData(){
         setLoading(true)
@@ -49,7 +50,7 @@ function DataContextProvider({children}){
         getData()
     },[])
     return (
-        <DataContext.Provider value={{products, blogs, loading}}>
+        <DataContext.Provider value={{products, blogs, loading, blogID, setBlogID}}>
            {children}
         </DataContext.Provider>
     )

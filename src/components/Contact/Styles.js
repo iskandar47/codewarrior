@@ -1,33 +1,12 @@
 import {makeStyles} from "@material-ui/core"
 export default makeStyles(theme=>({
-    /* contact : {
-        marginTop: "20vh",
-        display : "grid",
-        gridTemplateColumns: "1fr 1fr",
-        justifyContent: "center",
-        alignItems: "center",
-        width : "100%",
-        [theme.breakpoints.down("sm")] : {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignCtems: "center",
-            width: "100%",
-        }
-    }, */
+    
     form : {
         display : "flex",
         flexDirection : "column",
         maxWidth : "80%",
         fontFamily : 'Kumbh Sans, sans serif',
-        /* [theme.breakpoints.down("sm")]: {
-            maxWidth : "80%",
-            margin : "42px auto"
-        },
-        [theme.breakpoints.down("xs")]: {
-            maxWidth : "90%",
-            margin : "42px auto"
-        } */
+        
     },
     input : {
         height : "42px",

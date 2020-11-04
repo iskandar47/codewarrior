@@ -55,7 +55,7 @@ export default function HomeHero() {
             <p>this is some paragraph about products and blogs</p>
             <div className="hero-btns">
               <Link to="/devappareal"><Button>Dev appareal</Button></Link>
-              <Link to="./allproducts"><Button>All products</Button></Link>
+              <Link to="./blogs"><Button>Dev Blogs</Button></Link>
             </div>
         </div>
       </div>

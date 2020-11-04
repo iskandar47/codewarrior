@@ -1,6 +1,6 @@
 import React, { useContext} from 'react'
 import {Grid} from "@material-ui/core"
-import "./Products.css"
+/* import "./Products.css" */
 import { DataContext } from '../../Context'
 
 
@@ -10,9 +10,15 @@ function Products() {
     console.log(products)
     console.log(loading)
     return (
-          <div className="products">
+          <div style={{height : "60vh"}}>
               <Grid>
-                <h1>THIS PAGE IS FOR AMAZON PRODUCTS</h1>
+                <h1 style={{
+                  textAlign : "center", 
+                  marginTop : "30vh"
+                  }}
+                  >
+                    COMING SOON...
+                </h1>
               </Grid>
           </div>
     )

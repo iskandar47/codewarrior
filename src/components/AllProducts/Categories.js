@@ -12,7 +12,7 @@ function Categories() {
             <ul className={open ? "categoriesList active" : "categoriesList"}>
                 <li>Electronics</li>
                 <li>Appareal</li>
-                <li>Health & Beauty</li>
+                <li>Books</li>
                 <li>Accessories</li>
                 <li>Other</li>
             </ul>

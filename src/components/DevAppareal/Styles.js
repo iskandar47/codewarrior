@@ -13,7 +13,8 @@ export default makeStyles({
         transition : "all 100ms linear",
         '&:hover' : {
             transform : "scale(1.03)",
-        }
+        },
+        boxShadow : "1px 1px 5px #CCC",
     },
     action : {
         "&:hover" : {
@@ -40,8 +41,9 @@ export default makeStyles({
         padding : "0px 8px",
         fontWeight : "600",
         fontFamily : "Kumbh Sans",
+        lineHeight : "18px",
     },
     cardContent : {
-        padding : "16px 0px 0px",
+        padding : "0px",
     }
 })
