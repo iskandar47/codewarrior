@@ -3,6 +3,7 @@ export default makeStyles({
     devProducts : {
         margin : "10vh auto",
         width : "90%",
+        minHeight : "100vh"
     },
     header : {
         marginTop : "20vh",
@@ -18,5 +19,6 @@ export default makeStyles({
     },
     blogsPage : {
         marginTop : "20vh",
+        minHeight : "100vh"
     },
 })

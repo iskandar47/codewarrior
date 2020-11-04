@@ -18,7 +18,7 @@ function BlogsList() {
         {item.fields.blogTitle}
         <i 
         className="fas fa-chevron-right"
-        style={{paddingLeft : "8px"}} 
+        style={{paddingLeft : "8px", color : "#E85A4F"}} 
         >
         </i>
         </li>
@@ -34,14 +34,15 @@ function BlogsList() {
              onClick={()=> setHovered(!hovered)}
              className="fas fa-chevron-right"
              style={{
+                 color : "#E85A4F",
                  position : "absolute",
                  fontSize : "32px",
                  padding : "16px 16px 16px 6px",
-                 backgroundColor : "#FAFAFA",
+                 backgroundColor : "#F3F3F3",
                  borderRadius : "0 50% 50% 0",
-                 borderRight : "1px solid #CCC",
-                 borderTop : "1px solid #CCC",
-                 borderBottom : "1px solid #CCC",
+                 borderRight : "1px solid #F3F3F3",
+                 borderTop : "1px solid #F3F3F3",
+                 borderBottom : "1px solid #F3F3F3",
                  right : "-42px",
                  top: "40%",
              }}

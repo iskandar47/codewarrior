@@ -8,8 +8,12 @@ function DevProduct({src, price, title, link}) {
     return (
       <Grid item xs={12} sm={6} md={4} lg={3}>
         <Card className={classes.root}>
-          <CardActionArea className={classes.action} >
+          <CardActionArea classes={{
+          root: classes.actionArea,
+          focusHighlight: classes.focusHighlight
+        }} >
             <CardMedia
+              className={classes.cardMedia}
               component="img"
               alt="Contemplative Reptile"
               height="280"
@@ -24,9 +28,9 @@ function DevProduct({src, price, title, link}) {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
-              <a style={{textDecoration : "none", color: "blue"}} href={link} target="_blank" rel="noreferrer">Buy from Amazon</a> 
-              <i style={{fontSize : 24, marginLeft : 8}} className="fab fa-amazon"></i>
+            <Button className={classes.cardBtn} size="small" /* variant="outlined" */>
+              <a href={link} target="_blank" rel="noreferrer">Order now</a> 
+              <i className="fab fa-amazon"></i>
             </Button>
           </CardActions>
         </Card>

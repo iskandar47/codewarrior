@@ -1,6 +1,5 @@
 import React, { useContext} from 'react'
 import {Grid} from "@material-ui/core"
-/* import "./Products.css" */
 import { DataContext } from '../../Context'
 
 

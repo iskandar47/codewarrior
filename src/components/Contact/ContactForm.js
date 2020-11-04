@@ -59,7 +59,6 @@ function ContactForm() {
                 />
                 <Button 
                 variant="outlined" 
-                color="primary" 
                 className={classes.btn} 
                 type="submit"
                 >

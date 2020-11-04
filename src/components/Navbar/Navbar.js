@@ -14,6 +14,7 @@ function Navbar() {
     function closeMobileMenu (e) {
         setPage(e.target.name)
         setClick(false)
+        window.scrollTo(0,0)
     }
     
     return (

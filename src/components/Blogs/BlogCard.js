@@ -7,7 +7,13 @@ function BlogCard({title, handleClick}) {
     return (
         <Grid item /* style={{margin : "auto"}} */>
             <Card className={classes.root}>
-            <CardActionArea onClick={handleClick} >
+            <CardActionArea 
+            onClick={handleClick} 
+            classes={{
+                root : classes.actionArea,
+                focusHighlight : classes.focusHighlight
+            }} 
+            >
                 <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
@@ -25,11 +31,11 @@ function BlogCard({title, handleClick}) {
                 </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions className={classes.cardAction}>
                 <Button size="small" color="primary">
                 Share
                 </Button>
-                <Button onClick={handleClick} size="small" color="primary">
+                <Button onClick={handleClick} size="small" color="danger">
                 Learn More
                 </Button>
             </CardActions>

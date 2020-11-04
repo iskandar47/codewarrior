@@ -20,7 +20,6 @@ function DevAppareal() {
             <Grid spacing={2} className={classes.devProducts} container >
                 {loading ? <Loader /> : displayProducts}
             </Grid>
-            
         </>
     )
 }

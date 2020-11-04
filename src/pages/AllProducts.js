@@ -5,10 +5,10 @@ import Products from "../components/AllProducts/Products.js"
 
 function AllProducts() {
     return (
-        <div>
+        <>
             <Categories />
             <Products/>
-        </div>
+        </>
     )
 }
 

@@ -24,13 +24,14 @@
     padding: 8px;
     cursor: pointer;
 }
-.navbarList a {
+.navbarList li a {
+    display: block;
     text-decoration: none;
     color: #000;
 }
 
 .navbarList li a:hover {
-    color: #3455FF;
+    transform: scale(1.08);
 }
 .menuIcon {
     display: none;

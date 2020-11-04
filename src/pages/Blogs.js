@@ -12,10 +12,12 @@ function Blogs() {
     const {loading} = useContext(DataContext)
     
     return (
+        <>
         <div className={classes.blogsPage}>
             <BlogsList />
             {loading ? <Loader /> : <BlogPosts />}
         </div>
+        </>
     )
 }
 

@@ -1,6 +1,6 @@
 import {makeStyles} from "@material-ui/core"
 
-const mainGray = "#FAFAFA"
+const mainGray = "#F3F3F3"
 export default makeStyles(theme =>({
     
     blogsListContainer :{
@@ -23,12 +23,11 @@ export default makeStyles(theme =>({
         width : 250,
         transition : "all 200ms linear",
         zIndex : 4,
-        borderRight : "1px solid #CCC"
+        borderRight : "1px solid #F3F3F3"
     },
     blogsList : {
         listStyle : "none",
         width : "100%",
-        /* margin : "auto", */
     },
     blogPostContainer : {
         backgroundColor : mainGray,
@@ -42,9 +41,9 @@ export default makeStyles(theme =>({
     blogPost : {
         width : "90%",
         margin : "auto",
-        fontFamily: 'Roboto, sansSerif',
-        fontWeight : "400",
-        fontSize : "22px",
+        fontFamily: 'roboto, sansSerif',
+        fontWeight : "300",
+        fontSize : "20px",
         letterSpacing : "1px",
         [theme.breakpoints.down("sm")] : {
             fontSize : "16px"
@@ -77,21 +76,30 @@ export default makeStyles(theme =>({
     heading : {
         textAlign : "center", 
         borderBottom : "solid 1px #555",
-        marginBottom : "18px",
+        padding : "18px 0",
         fontFamily : "Kumbh Sans",
     },
     listItem : {
         textAlign : "left",
         padding : "16px 8px",
         marginBottom : "16px",
-       /*  backgroundColor : "#FFF", */
         fontWeight : "500",
         fontSize : "16px",
         cursor : "pointer",
-        /* boxShadow : "1px 1px 5px #CCC", */
         "&:hover" : {
-            backgroundColor : "#EEE",
-            borderRight : "6px solid red"
+            backgroundColor : "#D7D8DA",
+            borderRight : "6px solid #E85A4F"
+        }
+    },
+    actionArea : {
+        "&:hover $focusHighlight" : {
+            opacity : "0"
+        }
+    },
+    focusHighlight : {},
+    cardAction : {
+        "& > *" : {
+            color : "#E85A4F"
         }
     }
 }))
