@@ -23,6 +23,9 @@
     align-items: center;
     width: 50%;
 }
+.hero h1 {
+    line-height: 1;
+}
 .hero-btns {
     width: 100%;
 }
@@ -52,7 +55,6 @@
     .hero-btns {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-top: 16px;
     }
     .hero .hero-btns button {
@@ -91,10 +93,12 @@
     height: 50%;
     align-items: center;
 }
+
 @media screen and (max-width: 960px) {
     .hero {
         width: 70%;
     }
+    
     .bottom-home-page {
         height: auto;
     }

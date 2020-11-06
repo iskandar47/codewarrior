@@ -35,7 +35,7 @@ function BlogCard({title, handleClick}) {
                 <Button size="small" color="primary">
                 Share
                 </Button>
-                <Button onClick={handleClick} size="small" color="danger">
+                <Button onClick={handleClick} size="small">
                 Learn More
                 </Button>
             </CardActions>

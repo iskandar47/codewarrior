@@ -4,12 +4,21 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     height: 10vh;
     background-color: #FFF;
     color: #000;
     box-shadow: 0 1px 5px #CCC;
     z-index: 5;
+}
+.navbar img {
+    width: 100px;
+    height: 70px;
+    padding-left: 12px;
+}
+.navbar h4 {
+    display: none;
 }
 .navbarList {
     display: flex;
@@ -41,11 +50,24 @@
     padding: 0;
     margin-bottom: 6px;
 }
+@media screen and (max-width : 560px) {
+    .navbar img {
+        width: 70px;
+        height: 40px;
+        padding-left: 6px;
+    }
+    .navbar h4 {
+        margin-left: 32px;
+    }
+}
 @media screen and (max-width : 960px){
     .navbar {
         margin-bottom: 8px;
     }
-    
+    .navbar h4 {
+        display: block;
+        margin-right: 52px;
+    }
     .navbarList {
         background-color: #FFF;
         display: flex;
@@ -71,13 +93,9 @@
           padding: 32px;
       }
       .menuIcon {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          font-size: 24px;
-          width: 90%;
-          margin: auto;
-          /* transform: translate(-100%, 30%); */
+          display: block;
+          font-size: 28px;
+          padding-right: 16px;
           cursor: pointer;
       }
       .fa-home {
