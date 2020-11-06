@@ -12,11 +12,12 @@
     box-shadow: 0 1px 5px #CCC;
     z-index: 5;
 }
-.navbar img {
-    width: 100px;
-    height: 70px;
+/* .navbar .img {
+    width: 200px;
+    height: 50px;
     padding-left: 12px;
-}
+    
+} */
 .navbar h4 {
     display: none;
 }
@@ -51,11 +52,12 @@
     margin-bottom: 6px;
 }
 @media screen and (max-width : 560px) {
-    .navbar img {
-        width: 70px;
-        height: 40px;
+    /* .navbar .img {
+        width: 100px;
+        height: 60px;
         padding-left: 6px;
-    }
+        background-size: cover;
+    } */
     .navbar h4 {
         margin-left: 32px;
     }
