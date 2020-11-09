@@ -16,11 +16,11 @@ function BlogsList() {
         key={item.sys.id} 
         >
         {item.fields.blogTitle}
-        <i 
+        {/* <i 
         className="fas fa-chevron-right"
         style={{paddingLeft : "8px", color : "#E85A4F"}} 
         >
-        </i>
+        </i> */}
         </li>
     ))
 

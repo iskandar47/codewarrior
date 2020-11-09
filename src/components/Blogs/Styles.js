@@ -23,11 +23,12 @@ export default makeStyles(theme =>({
         width : 250,
         transition : "all 200ms linear",
         zIndex : 4,
-        borderRight : "1px solid #F3F3F3"
+        borderRight : "1px solid #F3F3F3",
     },
     blogsList : {
         listStyle : "none",
         width : "100%",
+        transition : "all 100ms linear"
     },
     blogPostContainer : {
         backgroundColor : mainGray,
@@ -40,6 +41,7 @@ export default makeStyles(theme =>({
     },
     blogPost : {
         width : "90%",
+        paddingBottom : "32px",
         margin : "auto",
         fontFamily: 'roboto, sansSerif',
         fontWeight : "300",
@@ -51,7 +53,11 @@ export default makeStyles(theme =>({
     },
     root : {
         maxWidth : 345,
+        height : "100%",
         borderRadius : 0,
+        display : "flex",
+        flexDirection : "column",
+        justifyContent : "space-between",
         transition : "all 100ms linear",
         '&:hover' : {
             transform : "scale(1.03)",
@@ -89,7 +95,8 @@ export default makeStyles(theme =>({
         "&:hover" : {
             backgroundColor : "#D7D8DA",
             borderRight : "6px solid #E85A4F"
-        }
+        },
+        transition : "all 100ms linear"
     },
     actionArea : {
         "&:hover $focusHighlight" : {

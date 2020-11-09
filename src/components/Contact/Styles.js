@@ -6,7 +6,7 @@ export default makeStyles(theme=>({
         flexDirection : "column",
         maxWidth : "80%",
         fontFamily : 'Kumbh Sans, sans serif',
-        
+        height : ""
     },
     input : {
         height : "42px",
@@ -25,7 +25,7 @@ export default makeStyles(theme=>({
         marginBottom : "4px",
     },
     messageArea : {
-        height: "110px",
+        height: "135px",
         padding: "8px",
         margin: "0 0 16px",
         fontSize: "16px",
@@ -38,10 +38,14 @@ export default makeStyles(theme=>({
     },
     about :{
        display : "flex",
+       width : "60%",
+       margin : "auto",
        flexDirection : "column",
        justifyContent : "center",
        alignItems : "center",
        fontSize : 22,
+       /* boxShadow : "1px 1px 9px #CCC",
+       borderRadius : "4px", */
     },
     identity : {
         textAlign : "center",
@@ -52,7 +56,8 @@ export default makeStyles(theme=>({
         borderRadius : "50%",
     },
     skills  :{
-        lineHeight : "32px"
+        lineHeight : "32px",
+        fontSize : "18px",
     },
     btn : {
         color : "#000",

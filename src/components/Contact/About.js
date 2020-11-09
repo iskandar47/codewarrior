@@ -8,7 +8,7 @@ function About() {
         <div className={classes.about}>
             <h1>About me</h1>
             <div className={classes.identity}>
-                <img className={classes.image} src="./myPhoto1.jpg" alt="salim D" />
+                <img className={classes.image} src="./r_Salim5x5Compressed.jpg" alt="salim D" />
                 <h3>Salim D.</h3>
             </div>
             <div className={classes.skills}>
