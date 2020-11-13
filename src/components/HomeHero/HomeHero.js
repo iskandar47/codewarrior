@@ -29,13 +29,13 @@ export default function HomeHero() {
             <p>this is some paragraph about this section and products</p>
             <Button variant="outlined">SHOP NOW</Button>
         </div>
-        <img alt="" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80s" />
+        <img alt="" src="./canvaBG2.png" />
       </div>
     )
   } else {
     return (
       <div className="bottom-ad">
-        <img alt="" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80s" />
+        <img alt="" src="./canvaBG2.png" />
         <div className="description">
             <h1>this is title</h1>
             <p>this is some paragraph about this section and products</p>
@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div className="hero-container">
       <div className="top-home-page">
-        <img alt="homepage" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
+        <img alt="homepage" src="./canvaBG2.png"/>
         <div className="hero">
             <h1>CODE WARRIORS..</h1>
             <p>this is some paragraph about products and blogs</p>
@@ -61,7 +61,7 @@ export default function HomeHero() {
       </div>
       <div className="bottom-home-page">
         <div className="top-ad">
-            <img alt="" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" />
+            <img alt="" src="./CODE WARRIORS REALM.png" />
             <div className="description">
               <h1>this is title</h1>
               <p>this is some paragraph about this section and products</p>
@@ -73,3 +73,4 @@ export default function HomeHero() {
     </div>
   );
 }
+/* https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 */

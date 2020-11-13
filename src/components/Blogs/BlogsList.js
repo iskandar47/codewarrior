@@ -8,19 +8,20 @@ function BlogsList() {
     const {blogs, setBlogID} = useContext(DataContext)
     const [hovered, setHovered] = useState(false)
     
-
+    
     const blogTitles = blogs.map((item)=> (
         <li 
         className={classes.listItem}
-        onClick={(e)=> setBlogID(item.sys.id)} 
+        onClick={ 
+            (e)=> {
+                setBlogID(item.sys.id)
+                window.scrollTo(0,0)
+            }
+        } 
         key={item.sys.id} 
         >
         {item.fields.blogTitle}
-        {/* <i 
-        className="fas fa-chevron-right"
-        style={{paddingLeft : "8px", color : "#E85A4F"}} 
-        >
-        </i> */}
+        
         </li>
     ))
 
@@ -34,7 +35,7 @@ function BlogsList() {
              onClick={()=> setHovered(!hovered)}
              className="fas fa-chevron-right"
              style={{
-                 color : "#E85A4F",
+                 color : "#FF4536",
                  position : "absolute",
                  fontSize : "32px",
                  padding : "16px 16px 16px 6px",
@@ -43,7 +44,7 @@ function BlogsList() {
                  borderRight : "1px solid #F3F3F3",
                  borderTop : "1px solid #F3F3F3",
                  borderBottom : "1px solid #F3F3F3",
-                 right : "-42px",
+                 right : "-44px",
                  top: "40%",
              }}
              ></i>

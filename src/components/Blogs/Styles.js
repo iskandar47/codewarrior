@@ -94,7 +94,7 @@ export default makeStyles(theme =>({
         cursor : "pointer",
         "&:hover" : {
             backgroundColor : "#D7D8DA",
-            borderRight : "6px solid #E85A4F"
+            borderRight : "6px solid #FF4536"
         },
         transition : "all 100ms linear"
     },
@@ -106,7 +106,7 @@ export default makeStyles(theme =>({
     focusHighlight : {},
     cardAction : {
         "& > *" : {
-            color : "#E85A4F"
+            color : "#FF4536"
         }
     }
 }))
