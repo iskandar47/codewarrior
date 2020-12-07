@@ -29,13 +29,13 @@ export default function HomeHero() {
             <p>this is some paragraph about this section and products</p>
             <Button variant="outlined">SHOP NOW</Button>
         </div>
-        <img alt="" src="./canvaBG2.png" />
+        <img alt="" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
       </div>
     )
   } else {
     return (
       <div className="bottom-ad">
-        <img alt="" src="./canvaBG2.png" />
+        <img alt="" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
         <div className="description">
             <h1>this is title</h1>
             <p>this is some paragraph about this section and products</p>
@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div className="hero-container">
       <div className="top-home-page">
-        <img alt="homepage" src="./canvaBG2.png"/>
+        <img alt="homepage" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"/>
         <div className="hero">
             <h1>CODE WARRIORS..</h1>
             <p>this is some paragraph about products and blogs</p>
@@ -61,7 +61,7 @@ export default function HomeHero() {
       </div>
       <div className="bottom-home-page">
         <div className="top-ad">
-            <img alt="" src="./CODE WARRIORS REALM.png" />
+            <img alt="" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
             <div className="description">
               <h1>this is title</h1>
               <p>this is some paragraph about this section and products</p>

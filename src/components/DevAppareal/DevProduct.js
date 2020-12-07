@@ -3,7 +3,7 @@ import { Card, CardMedia, CardActionArea, Typography, CardContent, CardActions, 
 import useStyles from "./Styles.js"
 
 
-function DevProduct({src, price, title, link}) {
+function DevProduct({src, price, title, link, name}) {
   const classes = useStyles()
     return (
       <Grid item xs={12} sm={6} md={4} lg={3}>
