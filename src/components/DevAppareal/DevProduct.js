@@ -18,19 +18,18 @@ function DevProduct({src, price, title, link}) {
               alt="Contemplative Reptile"
               height="280"
               image={src}
-              title={title}
+              title={name}
             />
             <CardContent className={classes.cardContent}>
-              <p className={classes.price}>{`$ ${price}`}</p>
+              <p className={classes.price}>{`dzd ${price}`}</p>
               <Typography className={classes.title} variant="subtitle1" align="center" component="p">
-                {title}
+                {name}
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button className={classes.cardBtn} size="small" /* variant="outlined" */>
-              <a href={link} target="_blank" rel="noreferrer">Order now</a> 
-              <i className="fab fa-amazon"></i>
+            <Button className={classes.cardBtn} size="small" >
+              Order now
             </Button>
           </CardActions>
         </Card>
