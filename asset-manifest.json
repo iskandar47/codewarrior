@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/codewarrior/static/css/main.6d07c256.chunk.css",
+    "main.js": "/codewarrior/static/js/main.0b1a1928.chunk.js",
+    "main.js.map": "/codewarrior/static/js/main.0b1a1928.chunk.js.map",
+    "runtime-main.js": "/codewarrior/static/js/runtime-main.d0486658.js",
+    "runtime-main.js.map": "/codewarrior/static/js/runtime-main.d0486658.js.map",
+    "static/js/2.ffcd8cd3.chunk.js": "/codewarrior/static/js/2.ffcd8cd3.chunk.js",
+    "static/js/2.ffcd8cd3.chunk.js.map": "/codewarrior/static/js/2.ffcd8cd3.chunk.js.map",
+    "index.html": "/codewarrior/index.html",
+    "static/css/main.6d07c256.chunk.css.map": "/codewarrior/static/css/main.6d07c256.chunk.css.map",
+    "static/js/2.ffcd8cd3.chunk.js.LICENSE.txt": "/codewarrior/static/js/2.ffcd8cd3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0486658.js",
+    "static/js/2.ffcd8cd3.chunk.js",
+    "static/css/main.6d07c256.chunk.css",
+    "static/js/main.0b1a1928.chunk.js"
+  ]
+}
